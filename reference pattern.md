@@ -1,5 +1,8 @@
 ---
-tags: [rust, patterns, references]
+tags: 
+    - rust
+    - patterns
+    - references
 ---
 
 # Reference Pattern
