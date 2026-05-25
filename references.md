@@ -43,3 +43,11 @@ Mutable references have one big restriction: *If you have a mutable reference to
 Slices let you *reference* a contiguous sequence of elements in a collection.
 
 A slice is a kind of reference, so it does not have ownership.
+
+```rust
+let a: [i32; 6] = [10, 20, 30, 40, 50, 60];
+println!("a: {a:?}");
+
+let s: &[i32] = &a[2..4];
+println!("s: {s:?}");
+```
