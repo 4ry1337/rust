@@ -23,6 +23,7 @@ dbg!(r);
 
 - references are read-only
 - referenced data is *immutable*
+- references can not outlive the referenced data 
 - references can never be null
 
 ## Exclusive reference (Mutable reference)
