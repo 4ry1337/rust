@@ -33,4 +33,7 @@ Constants are valid for the entire time a program runs, within the scope in whic
 
 ## static
 
+Static variables are global variables.
 
+- immutable
+- can only store references with `'static` [[lifetime]]
