@@ -35,5 +35,6 @@ Constants are valid for the entire time a program runs, within the scope in whic
 
 Static variables are global variables.
 
-- immutable
 - can only store references with `'static` [[lifetime]]
+- has a fixed address in memory
+- can be mutated
