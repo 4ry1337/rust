@@ -7,18 +7,18 @@ tags:
     - const
 ---
 
-## let
+# Variables
 
 Variables, by default, are immutable.
 
-```
+```rust
 let x = 6;
 x = 5; // error[E0384]: cannot assign twice to immutable variable `x`
 ```
 
-To make them mutable add `mut` in front.
+To make them *mutable* add `mut` in front.
 
-```
+```rust
 let mut x = 6;
 x = 5;
 ```
