@@ -14,6 +14,11 @@ tags:
 
 <!-- TODO: Associated Types -->
 
-## Supertaits
+## Types of traits
 
-<!-- TODO: Associated Types -->
+### Marker traits
+
+### Supertaits
+
+<!-- TODO: Deriving -->
+
