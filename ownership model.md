@@ -10,7 +10,9 @@ Rules:
 
 - each value in Rust has a owner.
 - there can only be one owner a time.
-- when the owner foes out of scope, the value will be dropped.
+- when the owner goes out of scope, the value will be dropped.
+
+These rules are enforced through the [[borrow checker]].
 
 [^1]: [RUST BOOK](https://doc.rust-lang.org/stable/book/ch04-01-what-is-ownership.html)
 [^2]: [RUST REFERENCE](https://doc.rust-lang.org/reference)
