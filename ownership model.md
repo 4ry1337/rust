@@ -4,7 +4,7 @@ tags:
 ---
 
 > [!INFO] Ownership
-> A set of rules that govern how a [rust]] program [[memory management|manages memory]][^1].
+> A set of rules that govern how a [rust] program [[memory management|manages memory]][^1].
 
 Rules:
 
