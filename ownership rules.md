@@ -16,3 +16,4 @@ These rules are enforced through the [[borrow checker]].
 
 [^1]: [RUST BOOK](https://doc.rust-lang.org/stable/book/ch04-01-what-is-ownership.html)
 [^2]: [RUST REFERENCE](https://doc.rust-lang.org/reference)
+[^3]: [Rust for Rustaceans](https://learning.oreilly.com/library/view/rust-for-rustaceans/9781098129828/)
