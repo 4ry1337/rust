@@ -27,7 +27,7 @@ dbg!(r);
 
 ## Mutable reference (Exclusive reference)
 
-Mutable reference, also known as exclusive references, allow changing the value they refer to.
+Mutable reference, also known as exclusive references, `&mut T`, allow changing the value they refer to.
 
 ```rust
 let mut point = (1, 2);
