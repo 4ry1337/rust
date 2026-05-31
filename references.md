@@ -8,7 +8,7 @@ tags:
 
 ## Shared reference
 
-A reference provides a way to access another value without taking ownership of the value, and is also called *borrowing*.
+A shared reference, `&T`, provides a way to access another value without taking ownership of the value, and is also called *borrowing*.
 
 ```rust
 let a = 'A';
@@ -21,14 +21,13 @@ dbg!(r);
 // *r = 'X' // immutable
 ```
 
-- references are read-only
-- referenced data is *immutable*
+- referenced data is *immutable* or *read-only*
 - references can not outlive the referenced data 
 - references can never be null
 
-## Exclusive reference (Mutable reference)
+## Mutable reference (Exclusive reference)
 
-Exclusive reference, also known as mutable references, allow changing the value they refer to.
+Mutable reference, also known as exclusive references, allow changing the value they refer to.
 
 ```rust
 let mut point = (1, 2);
