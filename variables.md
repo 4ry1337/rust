@@ -1,0 +1,35 @@
+## rust variables
+
+```rust
+let x = 5; //immutable variable
+let mut y = 5; //mutable variable
+
+```
+
+### const
+
+```rust
+const PI = 3.14 // const variable
+// const mut THREE_HOURS_S: u32 = 60 * 60 * 3;
+// compile error, const can be mutable
+```
+
+- immutable be default
+- type must be annotated
+- all uppercase
+
+
+### shadowing
+
+```
+let x = 5;
+
+let x = x + 1;
+
+{
+    let x = x * 2;
+    println!("The value of x in the inner scope is: {x}");
+}
+
+println!("The value of x is: {x}");
+```
