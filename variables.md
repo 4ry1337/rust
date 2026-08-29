@@ -31,4 +31,4 @@ let x = x + 1;
 println!("The value of x is: {x}");
 ```
 
-declaring new variable with same name as previous - **overshadows** previous
+Declaring new variable with same name as previous - **overshadows** previous.
