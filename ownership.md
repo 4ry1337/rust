@@ -3,6 +3,8 @@ tags:
     - rust
 ---
 
+## Ownership
+
 > [!INFO] Ownership
 > A set of rules that govern how a [rust] program [[memory management|manages memory]][^1].
 
@@ -14,15 +16,21 @@ Rules:
 
 These rules are enforced through the [[borrow checker]].
 
-## Mutability
+### Mutability
 
 *Mutability* of data can be changed when ownership is transferred.
 
-## Move
+### Move or Copy
+
+If type size is known at compile time, it can be annotated with `Copy` trait.
+
+Rust wont allow annotating type with `Copy` trait, if the type, or it's parts, has implemented `Drop` trait.
+
+During assignment and pass-by-value, if type implements `Copy`, value is bitwise copied, else it is *moved*.
 
 *A shallow copy* that invalidates the previous owner is called *a move*.
 
-## Clone
+### Clone
 
 *A deep copy* is achieved explicitly by calling the `.clone()` method on a type that implements the `Clone` trait.
 
