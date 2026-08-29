@@ -8,11 +8,26 @@ tags:
 
 Rules:
 
-- each value in Rust has a owner.
-- there can only be one owner a time.
-- when the owner goes out of scope, the value will be dropped.
+1. each value in Rust has a owner.
+2. there can only be one owner a time.
+3. when the owner goes out of scope, the value will be dropped.
 
 These rules are enforced through the [[borrow checker]].
+
+## Move-semantics
+
+When doing assignments 
+```rust
+let x = y
+```
+or passing function arguments by value (foo(x)), the ownership of the resources is transferred.
+
+In Rust-speak, this is known as a *move*.
+
+### Mutability
+
+*Mutability* of data can be changed when ownership is transferred.
+
 
 [^1]: [RUST BOOK](https://doc.rust-lang.org/stable/book/ch04-01-what-is-ownership.html)
 [^2]: [RUST REFERENCE](https://doc.rust-lang.org/reference)
