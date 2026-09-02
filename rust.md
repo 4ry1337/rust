@@ -39,14 +39,14 @@ time
 
 ```folder-overview
 id: 98fe2c6e-4a3f-468a-950a-b8939f87b68f
-folderPath: ""
+folderPath: Literature Notes/rust
 title: "{{folderName}} overview"
 showTitle: false
 depth: 3
+style: explorer
 includeTypes:
   - folder
   - markdown
-style: list
 disableFileTag: false
 sortBy: name
 sortByAsc: true
@@ -57,20 +57,11 @@ showFolderNotes: false
 disableCollapseIcon: true
 alwaysCollapse: false
 autoSync: true
-allowDragAndDrop: true
+allowDragAndDrop: false
 hideLinkList: true
 hideFolderOverview: false
 useActualLinks: false
 fmtpIntegration: false
 titleSize: 1
 isInCallout: false
-```
-
-```dataview
-table without id
-    file.link as Title
-FROM
-    "Literature Notes/rust"
-WHERE
-    file.name != "rust"
 ```
