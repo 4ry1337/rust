@@ -1,0 +1,6 @@
+filters:
+  and:
+    - file.folder == "Literature Notes/rust"
+views:
+  - type: table
+    name: Table

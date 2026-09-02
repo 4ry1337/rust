@@ -34,3 +34,43 @@ time
     - Built-in dependency manager - cargo.
     - Built-in support for testing - cargo test.
     - Excellent [[Language Server Protocol]] support.
+
+## Table of Content
+
+```folder-overview
+id: 98fe2c6e-4a3f-468a-950a-b8939f87b68f
+folderPath: ""
+title: "{{folderName}} overview"
+showTitle: false
+depth: 3
+includeTypes:
+  - folder
+  - markdown
+style: list
+disableFileTag: false
+sortBy: name
+sortByAsc: true
+showEmptyFolders: false
+onlyIncludeSubfolders: false
+storeFolderCondition: true
+showFolderNotes: false
+disableCollapseIcon: true
+alwaysCollapse: false
+autoSync: true
+allowDragAndDrop: true
+hideLinkList: true
+hideFolderOverview: false
+useActualLinks: false
+fmtpIntegration: false
+titleSize: 1
+isInCallout: false
+```
+
+```dataview
+table without id
+    file.link as Title
+FROM
+    "Literature Notes/rust"
+WHERE
+    file.name != "rust"
+```
