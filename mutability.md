@@ -1,6 +1,6 @@
 # Shareable mutable containers.
 
-Rust memory safety is based on this rule: Given an object `T`, it is only possible to have one of the following:
+Memory safety is based on this rule: Given an object `T`, it is only possible to have one of the following:
 
 - Several immutable references (`&T`) to the object (also known as *aliasing*).
 - One mutable reference (`&mut T`) to the object (also known as *mutability*).
