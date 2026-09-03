@@ -1,11 +1,16 @@
-# Shareable mutable containers.
+# Shareable Mutable Containers
 
-Memory safety is based on this rule: Given an object `T`, it is only possible to have one of the following:
+Sometimes multiple references to an object must still mutate it — the [[6. pointers and borrowing#Rules of References|exclusivity rule]] is too strict for this.
 
-- Several immutable references (`&T`) to the object (also known as *aliasing*).
-- One mutable reference (`&mut T`) to the object (also known as *mutability*).
+*Shareable mutable containers* exist to permit mutability in a controlled manner, even in the presence of aliasing.
 
-This is enforced by the Rust compiler. However, there are situations where this rule is not flexible enough. Sometimes it is required to have multiple references to an object and yet mutate it.
+[[19. synchronization#Mutex|Mutex<T>]], [[19. synchronization#RwLock|RwLock<T>]], [[19. synchronization#OnceLock|OnceLock<T>]] or [[19. synchronization#Atomics|atomic types]] allow doing this among multiple threads 
+
+Cell<T>, RefCell<T>, and OnceCell<T> allow doing this in a single-threaded way—they do not implement Sync. Cell types provide *interior mutability*
+
+^interior-mutability
+
+
 
 [^docs]: https://doc.rust-lang.org/std/cell/index.html
 [^boook-cell]: https://doc.rust-lang.org/core/cell/index.html
