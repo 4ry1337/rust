@@ -1,3 +1,7 @@
+---
+tags:
+	- rust
+---
 # Foriegh Function Language
 
 ## Extern function qualifier
