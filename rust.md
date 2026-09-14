@@ -1,5 +1,6 @@
 ---
 tags:
+    - "programming language"
     - rust
 ---
 
