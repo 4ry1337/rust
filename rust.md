@@ -1,7 +1,5 @@
 ---
-tags:
-    - "programming language"
-    - rust
+related: "[[Programming Languages]]"
 ---
 
 # What is Rust?
