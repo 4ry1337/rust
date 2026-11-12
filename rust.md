@@ -26,7 +26,7 @@ time
     - Integer overflow is defined (panic or wrap-around).
 - Modern language features - as expressive and ergonomic as higher-level languages
     - Enums and pattern matching.
-    - [[10. generics|Generics]].
+    - [[12. generics|Generics]].
     - No overhead [[FFI]].
     - Zero-cost abstractions.
     - Great compiler errors.
